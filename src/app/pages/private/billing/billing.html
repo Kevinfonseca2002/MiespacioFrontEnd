@@ -1,0 +1,101 @@
+<h2>Facturación</h2>
+<p>Gestiona facturas, pagos y finanzas de tus proyectos</p>
+
+
+<!-- Seccion de estados de facturación -->
+
+<div class="states">
+  <div class="total">
+    <h3>Total Facturado</h3>
+    <p>numero</p>
+  </div>
+  <div class="pending">
+    <h3>Pendiente de Pago</h3>
+    <p>numero</p>
+  </div>
+  <div class="duePayment">
+    <h3>Pago Vencido</h3>
+    <p>numero</p>
+  </div>
+  <div class="paidMonthly">
+    <h3>Pagado este mes</h3>
+    <p>numero</p>
+  </div>
+</div>
+
+<!-- Filtros -->
+
+<div class="filters">
+
+  <div class="statusIcon">
+    <img src="" alt="">
+  </div>
+  <label for="billStatus">Todas las facturas</label>
+  <select name="billStatus" id="">
+    <option value="all">Todas las facturas</option>
+    <option value="paid">Pagadas</option>
+    <option value="pending">Pendientes</option>
+    <option value="overdue">Vencidas</option>
+  </select>
+
+  <div class="dateIcon">
+    <img src="" alt="">
+  </div>
+  <label for="billDate">Fecha de factura</label>
+  <select name="billDate id=">
+    <option value="">2030</option>
+    <option value="">2029</option>
+    <option value="">2028</option>
+    <option value="">2027</option>
+    <option value="">2026</option>
+    <option value="">2025</option>
+    <option value="">2024</option>
+    <option value="">2023</option>
+    <option value="">2022</option>
+    <option value="">2021</option>
+  </select>
+
+  <button>Nueva Factura</button>
+</div>
+
+<!-- Historial de facturas -->
+
+<div class="billHistory">
+
+  <h3>Historial de Facturas</h3>
+  <p>Todas las facturas emitidas y su estado de pago</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Factura</th>
+        <th>Cliente</th>
+        <th>Proyecto</th>
+        <th>Concepto</th>
+        <th>Monto</th>
+        <th>Vencimiento</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>No.Factura</td>
+        <td>ClientName</td>
+        <td>ProjectName</td>
+        <td>%of the amount paid</td>
+        <td>ProjectValue</td>
+        <td>DueDate</td>
+        <td>ProjectState</td>
+        <td>Botones acciones</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Resumen Financiero -->
+
+<div class="summary">
+  <h4>Resumen Financiero</h4>
+  <p>Tienes 2 facturas pendientes por un total de $33,500. Una factura está vencida y requiere atención inmediata. El flujo de caja este mes es de $13,500.</p>
+</div>
