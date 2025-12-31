@@ -10,7 +10,10 @@ h2 {
   color: #555;
   font-size: 18px;
 }
+
+
 //Estados Obras
+
 .status{
   display: flex;
   flex-wrap: wrap;
@@ -35,3 +38,110 @@ h2 {
   margin: 10px 0 0 0;
   color: #383838;
 }
+
+.filterBox{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 20px;
+  gap: 20px;
+  }
+
+  .filterBox select{
+    width: 200px;
+    height: 35px;
+    border-radius: 8px;
+    border: solid 1px #949393;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .filterIcon{
+    width: 35px;
+    height: 35px;
+    border: solid 1px #000000 ;
+    margin-bottom: 30px;
+  }
+
+// Cajas Proyectos
+// Cajas Proyectos-Detalles Proyectos
+
+.cajaProyecto{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  border: solid 1px #949393;
+  border-radius: 15px;
+  position: relative;
+}
+
+.buttons{
+  position: absolute;
+  width: 100px;
+  height: 35px;
+  top: 10px;
+  right: 40px;
+}
+
+.buttons button {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: solid 1px #949393;
+  margin: 3px 0 3px 15px;
+}
+
+.edit{
+  // background-image: image("../../../../assets/icons/projects/boton-editar.png");
+}
+.hide{}
+
+.mainImg{
+  width: 300px;
+  height: 250px;
+  border-radius: 15px;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 60px;
+}
+
+.mainTitle{
+  position: absolute;
+  top: 30px;
+  left: 400px;
+  color: solid black;
+  font-size: 30px;
+}
+
+.mainTitle h6 {
+  margin: 0;
+}
+
+.description{
+  position: absolute;
+  top: 55px;
+  left: 400px;
+}
+
+.description p {
+  font-size: 14px;
+}
+
+
+// Cajas Proyectos-Perfil Arquitecto o cliente
+
+.clientProfile{
+  display: flex;
+  flex-direction: row;
+  border: solid black 1px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
