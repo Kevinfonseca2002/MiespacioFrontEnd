@@ -1,0 +1,365 @@
+h2{
+  margin: 50px 0 0 100px;
+  font-size: 35px;
+}
+
+h3{
+  margin: 20px 0 0 100px;
+  color: #555555;
+  font-weight: normal;
+}
+
+.arrangeBoxes{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 40px;
+  margin: 40px 0 0 250px;
+}
+
+//Client Info
+
+.clientInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid #666666 1px;
+  border-radius: 25px;
+  min-width: 300px;
+  width: 400px;
+  height: 400px;
+
+  & h6{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 40px 0 0 0;};
+  & p{
+    font-size: 15px;
+    color: #575757;}
+  & button{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #e6e6e6;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid black 0.2px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+.profileImg{
+  border: solid rgb(76, 76, 76) 1px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px auto 10px auto;
+}
+
+
+//Personal Info
+
+.personInfo{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: start;
+  border: solid #666666 1px;
+  border-radius: 25px;
+  min-width: 600px;
+  max-width: 800px;
+  width: 700px;
+  height: 400px;
+  padding: 40px;
+
+  & .nameInfo{
+    width: 280px;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 40px;
+    background-color:#f3f2f2;
+    border: transparent;
+    }
+  & .contactInfo{
+    width: 550px;
+    border-radius: 10px;
+    height: 30px;
+    background-color: #f3f2f2;
+    border: transparent;}
+  & h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  & h4{
+    font-size: 18px;
+    font-weight: normal;
+    color: #666666;
+    margin-bottom: 50px;
+    margin-top: 5px;}
+    & label{
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;}
+}
+.editButton{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+    & .buttonIcon{
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+      display: inline-block;
+      vertical-align: middle;
+
+      & img{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+
+    & button{
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #e6e6e6;
+      width: 90px;
+      height: 40px;
+      border-radius: 10px;
+      border: solid black 0.2px;
+      opacity: 0.5;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+
+.nameIcon{
+      width: 30px;
+      height: 30px;
+
+      & img{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }}
+
+.formName .nameInfo{
+  position: absolute;
+  top: 145px;
+  left: 40px;
+}
+.formName label{
+  position: absolute;
+  top: 120px;
+  left: 60px;
+  color:#000000
+}
+.formLastName .nameInfo{
+  position: absolute;
+  top: 145px;
+  left: 350px;}
+
+.formLastName label{
+  position: absolute;
+  top: 120px;
+  left: 370px;
+  color:#000000
+}
+
+.formEmail .contactInfo{
+  position: absolute;
+  top: 215px;
+  left: 40px;
+}
+.formEmail label{
+  position: absolute;
+  top: 185px;
+  left: 60px;
+  color:#000000
+}
+.formPhone .contactInfo{
+  position: absolute;
+  top: 285px;
+  left: 40px;
+}
+.formPhone label{
+  position: absolute;
+  top: 260px;
+  left: 60px;
+  color:#000000
+}
+
+//Password
+
+.password{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  border: solid #666666 1px;
+  width: 550px;
+  height: 171px;
+  border-radius: 25px;
+  min-width: 400px;
+  padding: 20px;
+
+  & h4, p{
+    margin-bottom: 0;
+    margin-top: 10px;}
+  & h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: #555555;}
+  & p{
+    font-size: 18px;
+    color: #575757;
+    margin-bottom: 30px;}
+  }
+
+.securityButton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    & button{
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #e6e6e6;
+      width: 400px;
+      height: 40px;
+      border-radius: 10px;
+      border: solid black 0.2px;
+      opacity: 0.5;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+
+
+
+//Notifications
+
+.notificationsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  border: solid #666666 1px;
+  width: 550px;
+  border-radius: 25px;
+  min-width: 400px;
+  width: 550px;
+  height: 171px;
+  padding: 10px 20px;
+
+  & h4, p{
+    margin-bottom: 0;
+    margin-top: 10px;}
+  & h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: #555555;}
+  & p{
+    font-size: 18px;
+    color: #575757;
+    margin-bottom: 20px;}
+
+}
+
+.notifications{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  & label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #444444;
+  };
+}
+.emailBox label{
+        margin-right: 250px;
+  }
+
+.updatesBox label{
+        margin-right: 217px;
+  }
+
+.updatesBox input{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+.emailBox input{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+
+//Eliminar Cuenta
+
+.deleteAccount{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  border: solid #ff8e8e 1px;
+  margin: 40px 0 0 250px;
+  width: 1140px;
+  height: 150px;
+  border-radius: 25px;
+  padding: 20px;
+
+  & .advertisment{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff0000;
+    margin-bottom: 0;
+    margin-top: 10px;}
+
+
+  & p{
+    font-size: 18px;
+    color: #575757;
+    margin-top: 0;}
+}
+
+.deleteButton{
+    margin-top: 0;
+
+    & button{
+      font-size: 16px;
+      font-weight: normal;
+      background-color: #ffffff;
+      color: #ff0000;
+      width: 150px;
+      height: 40px;
+      border-radius: 10px;
+      border: solid #ff0000 0.2px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover{
+        background-color: #ff0000;
+        color: white;
+      }
+    }
+  }

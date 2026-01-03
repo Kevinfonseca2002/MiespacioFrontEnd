@@ -1,64 +1,89 @@
+<app-header></app-header>
 <h2>Mi Perfil</h2>
 
 <h3>Gestiona tu información personal</h3>
 
-<!-- 1er container: Informacion personal -->
-<div class="clientInfo">
-  <div class="profileImg">
-    <img src="" alt="" />
+<div class="arrangeBoxes">
+  <!-- 1er container: Informacion personal -->
+  <div class="clientInfo">
+    <div class="profileImg">
+      <img src="" alt="" />
+    </div>
+    <h6>Juan Perez</h6>
+    <p>Cliente desde fecha de inicio</p>
+    <div class="clientButton"><button>Cambiar Foto</button></div>
   </div>
-  <h3>Juan Perez</h3>
-  <p>Cliente desde fecha de inicio</p>
-</div>
 
-<!-- 2do container: Información Personal -->
+  <!-- 2do container: Información Personal -->
 
-<h3>Informacion Personal</h3>
-<h4>Actualiza tus datos personales</h4>
+  <div class="personInfo">
+    <h5>Informacion Personal</h5>
+    <h4>Actualiza tus datos personales</h4>
+    <div class="editButton">
+      <button>
+        <div class="buttonIcon">
+          <img src="assets/icons/arquitect-profile/boton-editar.png" alt="" />
+        </div>
+        Editar
+      </button>
+    </div>
 
-<div class="formInfo">
-  <form>
-    <label for="name">Nombre:</label>
-    <input type="text" name="name" />
+    <div class="formInfo">
+      <form>
+        <div class="formName">
+          <label for="name">Nombre</label>
+          <input class="nameInfo" type="text" name="name" />
+        </div>
+        <div class="formLastName">
+          <label for="lastName">Apellido</label>
+          <input class="nameInfo" type="text" name="lastName" />
+        </div>
+        <div class="formEmail">
+          <label for="email">Correo Electrónico</label>
+          <input class="contactInfo" type="email" name="email" id="" />
+        </div>
+        <div class="formPhone">
+          <label for="phone">Teléfono</label>
+          <input class="contactInfo" type="tel" name="phone" />
+        </div>
+      </form>
+    </div>
+  </div>
 
-    <label for="lastName">Apellido</label>
-    <input type="text" name="lastName" />
+  <!-- 3ro container: Contraseña -->
 
-    <label for="email"></label>
-    <input type="email" name="email" id="" />
+  <div class="password">
+    <h4>Seguridad</h4>
+    <p>Actualiza tu contraseña</p>
+    <div class="securityButton"><button>Cambiar Contraseña</button></div>
+  </div>
 
-    <label for="phone"></label>
-    <input type="tel" name="phone" />
-  </form>
-</div>
+  <!-- 4to container: Notificaciones -->
 
-<!-- 3ro container: Contraseña -->
-
-<div class="password">
-  <h3>Seguridad</h3>
-  <p>Actualiza tu contrasenia</p>
-  <button>Cambiar Contraseña</button>
-</div>
-
-<!-- 4to container: Notificaciones -->
-
-<div class="notificationsContainer">
-  <h3>Notificaciones</h3>
-  <p>Configura tus preferencias</p>
-
-  <form class="notifications">
-    <label for="emailNotification"></label>
-    <input type="checkbox" name="emailNotification" />
-
-    <label for="updates"></label>
-    <input type="checkbox" name="updates" />
-  </form>
+  <div class="notificationsContainer">
+    <div class="notificationsTitles">
+      <h4>Notificaciones</h4>
+      <p>Configura tus preferencias</p>
+    </div>
+    <div class="notificationsOptions">
+      <form class="notifications">
+        <div class="emailBox">
+        <label for="emailNotification">Notificaciones por Email</label>
+        <input type="checkbox" name="emailNotification" />
+        </div>
+        <div class="updatesBox">
+        <label for="updates">Actualizaciones por Proyecto</label>
+        <input type="checkbox" name="updates" />
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
 
 <!-- 5to container: Eliminar cuenta -->
 
 <div class="deleteAccount">
-  <h3 class="advertisment">Zona de peligro</h3>
+  <h4 class="advertisment">Zona de peligro</h4>
   <p>Acciones irreversibles con tu cuenta</p>
-  <button>Eliminar cuenta</button>
+  <div class="deleteButton"><button>Eliminar cuenta</button></div>
 </div>
