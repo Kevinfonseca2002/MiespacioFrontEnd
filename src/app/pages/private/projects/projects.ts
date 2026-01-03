@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { Header } from '../../../shared/children/header/header';
-import { RouterLink } from "@angular/router";
+
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [Header, RouterLink],
+  imports: [Header],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
 })
